@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle class</title>
+    <style>
+        .tit_h1 {color:#555;transition:color .4s ease-in-out;}
+        .on {color:#32a852;}
+    </style>
+</head>
+<body>
+    
+    <h1 class="tit_h1">Click here</h1>
+
+
+<script>
+
+    const titH1 = document.querySelector(".tit_h1");
+    function toggleClicked() {
+        titH1.classList.toggle("on")
+    }
+    titH1.addEventListener("click", toggleClicked);
+
+</script>    
+
+</body>
+</html>
